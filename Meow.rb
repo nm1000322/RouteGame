@@ -18,7 +18,6 @@ get '/guess/even/:object' do
   player = params[:object].to_i
   if player == number.to_i
     "You Win! The answer was #{player}"
-
   else
     "You lose! The answer was #{number}, not #{player}"
   end
